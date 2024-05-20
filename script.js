@@ -16,8 +16,10 @@ getUserData();
 document.getElementById("loginButton").addEventListener("click", function () {
   console.log("clicked");
   if (user !== null) {
-    chrome.tabs.create({ url: "http://localhost:3002/" });
+    chrome.tabs.create({ url: "https://mytimes-kishorekp.vercel.app" });
   } else {
-    chrome.tabs.create({ url: "http://localhost:3002/auth/login" });
+    chrome.tabs.create({
+      url: "https://mytimes-kishorekp.vercel.app/auth/login",
+    });
   }
 });
