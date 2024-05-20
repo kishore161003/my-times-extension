@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Chrome Extension</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        padding-top: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 350px;
+        width: 400px;
+        border-radius: 10px;
+      }
+
+      .container {
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .login-button {
+        background-color: rgb(12, 39, 53);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-weight: 600;
+        font-size: 16px;
+        margin: 2px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      margin-top: -90px;
+      align-items: start;
+    "
+  >
+    <div
+      style="
+        display: flex;
+        gap: 18px;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+      "
+    >
+      <div
+        style="display: flex; flex-direction: column; justify-content: center"
+      >
+        <img src="/logo3.png" alt="logo" height="30" width="30" />
+      </div>
+      <h1 style="color: #1f2937">My Times</h1>
+    </div>
+    <div style="width: 100%; height: 2px; background-color: #123953"></div>
+    <div class="container">
+      <div style="display: flex; gap: 5px">
+        <img
+          src="/herosection.png"
+          alt="Hero Section"
+          height="150"
+          width="150"
+          style="margin-left: 20px; margin-top: -5px"
+        />
+        <div style="display: flex; flex-direction: column">
+          <p style="font-size: large; width: 200px; margin-top: -2px">
+            If You
+            <span style="color: #123953; font-weight: 600">
+              Don't Want to Waste Your Time </span
+            >, Then You Should Know
+            <span style="color: #ee654f; font-weight: 600">
+              How You Use Your Time
+            </span>
+          </p>
+          <button
+            class="login-button"
+            id="loginButton"
+            style="font-size: small"
+          >
+            View Your Time
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
